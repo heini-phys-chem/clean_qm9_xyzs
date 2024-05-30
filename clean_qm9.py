@@ -27,11 +27,9 @@ def process_all_xyz_files(directory):
         if filename.endswith(".xyz"):
             filepath = os.path.join(directory, filename)
             process_xyz_file(filepath)
-            #print(f"Processed file: {filepath}")
 
 def main():
-    # Usage
-    directory = 'xyzs'  # Update this with the path to your XYZ files
+    directory = 'xyzs'
     process_all_xyz_files(directory)
 
 
