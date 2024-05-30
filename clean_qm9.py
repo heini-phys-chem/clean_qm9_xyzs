@@ -1,6 +1,8 @@
 import os
 import re
+
 from tqdm import tqdm
+
 
 def convert_scientific_notation(number_str):
     """Convert a scientific notation string with '*' to a float."""
@@ -31,7 +33,6 @@ def process_all_xyz_files(directory):
 def main():
     directory = 'xyzs'
     process_all_xyz_files(directory)
-
 
 
 if __name__ == '__main__':
